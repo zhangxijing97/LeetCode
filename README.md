@@ -73,3 +73,11 @@ This README provides a quick reference for basic commands and actions in Jupyter
 - Use `??` to access the source code of a function.
 
 These are basic commands to help you get started with Jupyter Notebook. Explore additional features and extensions as needed.
+
+https://pynative.com/
+
+https://www.javatpoint.com/python-tutorial
+
+https://www.programiz.com/python-programming/
+
+https://intellipaat.com/blog/tutorial/python-tutorial/
