@@ -6,6 +6,7 @@
 - [Linear Time](#Linear-Time)
 - [Constant Time](#Constant-Time)
 - [N squared Time](#N-squared-Time)
+- [Logn Time](#Logn-Time)
 
 ## 1. Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
@@ -78,4 +79,26 @@ for i in range(len (nums)):
         print(nums[i][jl)
 ```
 
-<!-- **Training Set:** -->
+### Logn Time
+```
+# Binary search
+nums = [1, 2, 3, 4, 5]
+target = 6
+1, r = 0, len (nums) - 1
+while 1 <= r:
+    m = (1 + r) // 2
+    if target < nums [m]:
+        r = m - 1
+    elif target > nums [m]:
+        1 = m + 1
+    else:
+        print(m)
+        break
+```
+```
+# Heap Push and Pop
+import heapq
+minHeap = []
+heapq.heappush(minHeap, 5)
+heapq.heappop(minHeap)
+```
