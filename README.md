@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Big O Notation and Time Complexity](#Big-O-Notation-and-Time-Complexity)
-- [Linear Time](#Training-Model)
+- [Linear Time](#Training-Model-O-(-n-))
 - [Constant Time O(1)](#Constant-Time)
 
 ### Big O Notation and Time Complexity
@@ -19,8 +19,8 @@ int addUp(int n){
     return sum;
 }
 ```
-n = 10000
-10000 steps
+n = 10000<br>
+10000 steps<br>
 
 #### Constant Time O(1)
 ```
