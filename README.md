@@ -6,8 +6,8 @@
 - [Linear Time](#Linear-Time)
 - [Constant Time](#Constant-Time)
 
-### 1. Big O Notation and Time Complexity
-#### Linear Time
+## 1. Big O Notation and Time Complexity
+### Linear Time
 **O(n)**<br>
 ```
 int addUp(int n){
@@ -21,7 +21,7 @@ int addUp(int n){
 n = 1000<br>
 1000 steps<br>
 
-#### Constant Time
+### Constant Time
 **O(1)**<br>
 ```
 int addUp (int n){
