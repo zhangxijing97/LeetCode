@@ -3,13 +3,12 @@
 ## Table of Contents
 
 1. [Big O Notation and Time Complexity](#Big-O-Notation-and-Time-Complexity)
-- [Linear Time](#Linear-Time-O-(-n-))
-- [Constant Time O(1)](#Constant-Time)
+- [Linear Time](#Linear-Time)
+- [Constant Time](#Constant-Time)
 
-### Big O Notation and Time Complexity
-
-#### Linear Time O(n)
-
+### 1. Big O Notation and Time Complexity
+#### Linear Time
+**O(n)**<br>
 ```
 int addUp(int n){
     int sum = 0;
@@ -19,16 +18,18 @@ int addUp(int n){
     return sum;
 }
 ```
-n = 10000<br>
-10000 steps<br>
+n = 1000<br>
+1000 steps<br>
 
 #### Constant Time
+**O(1)**<br>
 ```
 int addUp (int n){
     int sum = n * (p + 1) / 2;
     return sum;
 }
 ```
-
+n = 1000<br>
+3 steps<br>
 
 <!-- **Training Set:** The model learns patterns and relationships within the training set. It is the data on which the model is trained to make predictions.<br> -->
