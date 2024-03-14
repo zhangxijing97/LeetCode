@@ -7,7 +7,7 @@
 - [Constant Time](#Constant-Time)
 
 ## 1. Big O Notation and Time Complexity
-[Big O Cheat Sheet](https://www.bigocheatsheet.com/)
+<a href="https://www.bigocheatsheet.com/" target="_blank">Big O Cheat Sheet</a>
 ### Linear Time
 **O(n)**<br>
 ```
