@@ -1,4 +1,4 @@
-# TopInterview150
+# LeetCode
 
 ## Table of Contents
 
