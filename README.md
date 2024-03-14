@@ -8,8 +8,9 @@
 
 ## 1. Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
-![Alt Text](Image/BigONotation01.jpg)
-![Alt Text](Image/BigONotation02.jpg)
+|                                       |                                       |
+| ------------------------------------- | ------------------------------------- |
+| ![Alt Text](Image/BigONotation01.jpg) | ![Alt Text](Image/BigONotation02.jpg) |
 ### Linear Time
 **O(n)**<br>
 ```
