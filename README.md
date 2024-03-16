@@ -7,6 +7,8 @@
 - [Constant Time](#Constant-Time)
 - [N squared Time](#N-squared-Time)
 - [Logn Time](#Logn-Time)
+- [n*Logn Time](#n*Logn-Time)
+- [2^n](#2^n)
 
 ## 1. Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
@@ -101,4 +103,27 @@ import heapq
 minHeap = []
 heapq.heappush(minHeap, 5)
 heapq.heappop(minHeap)
+```
+
+### n*Logn Time
+```
+# HeapSort
+import heapq
+nums = [1, 2, 3, 4, 5]
+heapq.heapify(nums) # 0(n)
+while nums:
+    heapq. heappop(nums) # O(logn)
+
+# MergeSort
+# (and most built-in sorting functions)
+```
+
+### 2^n
+```
+# Recursion, tree height, two branches
+def recursion(i, nums):
+    if i == len(nums):
+        return 0
+branch1 = recursion(i + 1, nums)
+branch2 = recursion(i + 2, nums)
 ```
