@@ -10,6 +10,8 @@
 - [n*Logn Time](#n*Logn-Time)
 - [2^n](#2^n)
 
+2. [Lambda Expressions](#Lambda-Expressions)
+
 ## 1. Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 |                                       |                                       |
@@ -126,4 +128,33 @@ def recursion(i, nums):
         return 0
 branch1 = recursion(i + 1, nums)
 branch2 = recursion(i + 2, nums)
+```
+
+## 2. Lambda Expressions
+Example 1: A Simple Lambda Function<br>
+```
+add_ten = lambda x: x + 10
+print(add_ten(5))  # Output: 15
+```
+
+Example 2: Lambda with Multiple Arguments<br>
+```
+multiply = lambda x, y: x * y
+print(multiply(2, 3))  # Output: 6
+```
+
+Example 3: Lambda in ‘map()’ Function<br>
+```
+numbers = [1, 2, 3, 4]
+squared = map(lambda x: x**2, numbers)
+
+print(list(squared))  # Output: [1, 4, 9, 16]
+```
+
+Example 4: Lambda in 'filter()' Function<br>
+```
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+
+print(list(even_numbers))  # Output: [2, 4, 6]
 ```
