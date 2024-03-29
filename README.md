@@ -12,7 +12,7 @@
 
 2. [Lambda Expressions](#Lambda-Expressions)
 
-## 1. Big O Notation and Time Complexity
+## Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 |                                       |                                       |
 | ------------------------------------- | ------------------------------------- |
@@ -130,7 +130,7 @@ branch1 = recursion(i + 1, nums)
 branch2 = recursion(i + 2, nums)
 ```
 
-## 2. Lambda Expressions
+## Lambda Expressions
 Example 1: A Simple Lambda Function<br>
 ```
 add_ten = lambda x: x + 10
