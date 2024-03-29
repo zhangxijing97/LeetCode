@@ -158,3 +158,24 @@ even_numbers = filter(lambda x: x % 2 == 0, numbers)
 
 print(list(even_numbers))  # Output: [2, 4, 6]
 ```
+
+Example 5: Lambda in 'sorted()' Function<br>
+```
+pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+sorted_pairs = sorted(pairs, key=lambda pair: pair[1])
+
+print(sorted_pairs)  # Output: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+```
+
+Example 6 : Lambda in 'max()' Function<br>
+```
+people = [
+    {"name": "John", "age": 45},
+    {"name": "Diana", "age": 35},
+    {"name": "Anna", "age": 25},
+    {"name": "Mike", "age": 30}
+]
+
+oldest_person = max(people, key=lambda x: x['age'])
+print(oldest_person)
+```
