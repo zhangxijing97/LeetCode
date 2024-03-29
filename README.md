@@ -12,6 +12,8 @@
 
 2. [Lambda Expressions](#Lambda-Expressions)
 
+3. [Regular Expressions](#Regular-Expressions)
+
 ## Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 |                                       |                                       |
@@ -178,4 +180,81 @@ people = [
 
 oldest_person = max(people, key=lambda x: x['age'])
 print(oldest_person)
+```
+
+## Regular Expressions
+Matching a Pattern in a String<br>
+```
+import re
+
+text = "Hello, world!"
+pattern = r"world"
+
+match = re.search(pattern, text)
+
+if match:
+    print("Pattern found!")
+else:
+    print("Pattern not found.")
+```
+
+Finding All Matches<br>
+```
+import re
+
+text = "The rain in Spain falls mainly in the plain."
+pattern = r"in"
+
+matches = re.findall(pattern, text)
+print(matches)  # ['in', 'in', 'in', 'in', 'in', 'in']
+```
+
+Splitting a String by a Pattern<br>
+```
+import re
+
+text = "The rain in Spain"
+pattern = r" "
+
+words = re.split(pattern, text)
+print(words)  # ['The', 'rain', 'in', 'Spain']
+```
+
+Replacing a Pattern in a String<br>
+
+```
+import re
+
+text = "The rain in Spain"
+pattern = r"Spain"
+replacement = "France"
+
+new_text = re.sub(pattern, replacement, text)
+print(new_text)  # The rain in France
+```
+
+Complex Pattern Matching<br>
+```
+import re
+
+text = "Email me at email@example.com or at email2@example.org"
+pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
+
+emails = re.findall(pattern, text)
+print(emails)  # ['email@example.com', 'email2@example.org']
+```
+
+Compiling Regular Expressions<br>
+```
+import re
+
+pattern = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b")
+
+text = "Contact us at support@example.com."
+match = pattern.search(text)
+
+if match:
+    print("Email found:", match.group())
+else:
+    print("No email found.")
 ```
