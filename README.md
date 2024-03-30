@@ -188,12 +188,12 @@ print(oldest_person)
 ```
 pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
 ```
-\b: This is a word boundary marker.<br>
-A-Za-z0-9._%+-:This part matches the user name of the email address. It can contain letters (A-Za-z), numbers (0-9), dots (.), underscores (_), percent signs (%), plus signs (+), and hyphens (-).<br>
-A-Za-z0-9.-: After the @ symbol, this part matches the domain name of the email. It can contain letters, numbers, dots, and hyphens.<br>
-\.: This matches the dot before the top-level domain (like .com, .org).<br>
-[A-Z|a-z]{2,}: This part matches the top-level domain (TLD). It must be at least two characters long. The TLD can contain letters only. The {2,} specifies that there should be at least two characters.<br>
-\b: Another word boundary marker, ensuring the email address is recognized as a complete word.<br>
+**\b:** This is a word boundary marker.<br>
+**[A-Za-z0-9._%+-]:** This part matches the user name of the email address. It can contain letters (A-Za-z), numbers (0-9), dots (.), underscores (_), percent signs (%), plus signs (+), and hyphens (-).<br>
+**[A-Za-z0-9.-]:** After the @ symbol, this part matches the domain name of the email. It can contain letters, numbers, dots, and hyphens.<br>
+**\.:** This matches the dot before the top-level domain (like .com, .org).<br>
+**[A-Z|a-z]{2,}:** This part matches the top-level domain (TLD). It must be at least two characters long. The TLD can contain letters only. The {2,} specifies that there should be at least two characters.<br>
+**\b:** Another word boundary marker, ensuring the email address is recognized as a complete word.<br>
 
 
 ### Matching a Pattern in a String
