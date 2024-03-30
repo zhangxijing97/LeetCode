@@ -133,19 +133,19 @@ branch2 = recursion(i + 2, nums)
 ```
 
 ## Lambda Expressions
-### Example 1: A Simple Lambda Function<br>
+### A Simple Lambda Function
 ```
 add_ten = lambda x: x + 10
 print(add_ten(5))  # Output: 15
 ```
 
-### Example 2: Lambda with Multiple Arguments<br>
+### Lambda with Multiple Arguments
 ```
 multiply = lambda x, y: x * y
 print(multiply(2, 3))  # Output: 6
 ```
 
-### Example 3: Lambda in ‘map()’ Function<br>
+### Lambda in ‘map()’ Function
 ```
 numbers = [1, 2, 3, 4]
 squared = map(lambda x: x**2, numbers)
@@ -153,7 +153,7 @@ squared = map(lambda x: x**2, numbers)
 print(list(squared))  # Output: [1, 4, 9, 16]
 ```
 
-### Example 4: Lambda in 'filter()' Function<br>
+### Lambda in 'filter()' Function
 ```
 numbers = [1, 2, 3, 4, 5, 6]
 even_numbers = filter(lambda x: x % 2 == 0, numbers)
@@ -161,7 +161,7 @@ even_numbers = filter(lambda x: x % 2 == 0, numbers)
 print(list(even_numbers))  # Output: [2, 4, 6]
 ```
 
-### Example 5: Lambda in 'sorted()' Function<br>
+### Lambda in 'sorted()' Function
 ```
 pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
 sorted_pairs = sorted(pairs, key=lambda pair: pair[1])
@@ -169,7 +169,7 @@ sorted_pairs = sorted(pairs, key=lambda pair: pair[1])
 print(sorted_pairs)  # Output: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
 ```
 
-### Example 6 : Lambda in 'max()' Function<br>
+### Lambda in 'max()' Function
 ```
 people = [
     {"name": "John", "age": 45},
@@ -183,7 +183,20 @@ print(oldest_person)
 ```
 
 ## Regular Expressions
-### Matching a Pattern in a String<br>
+
+### Basic
+```
+pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
+```
+\b: This is a word boundary marker.<br>
+A-Za-z0-9._%+-:This part matches the user name of the email address. It can contain letters (A-Za-z), numbers (0-9), dots (.), underscores (_), percent signs (%), plus signs (+), and hyphens (-).<br>
+A-Za-z0-9.-: After the @ symbol, this part matches the domain name of the email. It can contain letters, numbers, dots, and hyphens.<br>
+\.: This matches the dot before the top-level domain (like .com, .org).<br>
+[A-Z|a-z]{2,}: This part matches the top-level domain (TLD). It must be at least two characters long. The TLD can contain letters only. The {2,} specifies that there should be at least two characters.<br>
+\b: Another word boundary marker, ensuring the email address is recognized as a complete word.<br>
+
+
+### Matching a Pattern in a String
 ```
 import re
 
@@ -198,7 +211,7 @@ else:
     print("Pattern not found.")
 ```
 
- ### Finding All Matches<br>
+### Finding All Matches
 ```
 import re
 
@@ -209,7 +222,7 @@ matches = re.findall(pattern, text)
 print(matches)  # ['in', 'in', 'in', 'in', 'in', 'in']
 ```
 
-### Splitting a String by a Pattern<br>
+### Splitting a String by a Pattern
 ```
 import re
 
@@ -220,7 +233,7 @@ words = re.split(pattern, text)
 print(words)  # ['The', 'rain', 'in', 'Spain']
 ```
 
-### Replacing a Pattern in a String<br>
+### Replacing a Pattern in a String
 
 ```
 import re
@@ -233,7 +246,7 @@ new_text = re.sub(pattern, replacement, text)
 print(new_text)  # The rain in France
 ```
 
-### Complex Pattern Matching<br>
+### Complex Pattern Matching
 ```
 import re
 
@@ -244,7 +257,7 @@ emails = re.findall(pattern, text)
 print(emails)  # ['email@example.com', 'email2@example.org']
 ```
 
-### Compiling Regular Expressions<br>
+### Compiling Regular Expressions
 ```
 import re
 
