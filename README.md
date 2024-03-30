@@ -194,7 +194,8 @@ pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
 **\.:** This matches the dot before the top-level domain (like .com, .org).<br>
 **[A-Z|a-z]{2,}:** This part matches the top-level domain (TLD). It must be at least two characters long. The TLD can contain letters only. The {2,} specifies that there should be at least two characters.<br>
 **\b:** Another word boundary marker, ensuring the email address is recognized as a complete word.<br>
-
+**'r'\w':** matches any character that's not a letter, digit, or underscore.<br>
+**'r'\w+':**This pattern will match entire words or sequences of alphanumeric characters.<br>
 
 ### Matching a Pattern in a String
 ```
