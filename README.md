@@ -133,19 +133,19 @@ branch2 = recursion(i + 2, nums)
 ```
 
 ## Lambda Expressions
-Example 1: A Simple Lambda Function<br>
+### Example 1: A Simple Lambda Function<br>
 ```
 add_ten = lambda x: x + 10
 print(add_ten(5))  # Output: 15
 ```
 
-Example 2: Lambda with Multiple Arguments<br>
+### Example 2: Lambda with Multiple Arguments<br>
 ```
 multiply = lambda x, y: x * y
 print(multiply(2, 3))  # Output: 6
 ```
 
-Example 3: Lambda in ‘map()’ Function<br>
+### Example 3: Lambda in ‘map()’ Function<br>
 ```
 numbers = [1, 2, 3, 4]
 squared = map(lambda x: x**2, numbers)
@@ -153,7 +153,7 @@ squared = map(lambda x: x**2, numbers)
 print(list(squared))  # Output: [1, 4, 9, 16]
 ```
 
-Example 4: Lambda in 'filter()' Function<br>
+### Example 4: Lambda in 'filter()' Function<br>
 ```
 numbers = [1, 2, 3, 4, 5, 6]
 even_numbers = filter(lambda x: x % 2 == 0, numbers)
@@ -161,7 +161,7 @@ even_numbers = filter(lambda x: x % 2 == 0, numbers)
 print(list(even_numbers))  # Output: [2, 4, 6]
 ```
 
-Example 5: Lambda in 'sorted()' Function<br>
+### Example 5: Lambda in 'sorted()' Function<br>
 ```
 pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
 sorted_pairs = sorted(pairs, key=lambda pair: pair[1])
@@ -169,7 +169,7 @@ sorted_pairs = sorted(pairs, key=lambda pair: pair[1])
 print(sorted_pairs)  # Output: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
 ```
 
-Example 6 : Lambda in 'max()' Function<br>
+### Example 6 : Lambda in 'max()' Function<br>
 ```
 people = [
     {"name": "John", "age": 45},
@@ -183,7 +183,7 @@ print(oldest_person)
 ```
 
 ## Regular Expressions
-Matching a Pattern in a String<br>
+### Matching a Pattern in a String<br>
 ```
 import re
 
@@ -198,7 +198,7 @@ else:
     print("Pattern not found.")
 ```
 
-Finding All Matches<br>
+ ### Finding All Matches<br>
 ```
 import re
 
@@ -209,7 +209,7 @@ matches = re.findall(pattern, text)
 print(matches)  # ['in', 'in', 'in', 'in', 'in', 'in']
 ```
 
-Splitting a String by a Pattern<br>
+### Splitting a String by a Pattern<br>
 ```
 import re
 
@@ -220,7 +220,7 @@ words = re.split(pattern, text)
 print(words)  # ['The', 'rain', 'in', 'Spain']
 ```
 
-Replacing a Pattern in a String<br>
+### Replacing a Pattern in a String<br>
 
 ```
 import re
@@ -233,7 +233,7 @@ new_text = re.sub(pattern, replacement, text)
 print(new_text)  # The rain in France
 ```
 
-Complex Pattern Matching<br>
+### Complex Pattern Matching<br>
 ```
 import re
 
@@ -244,7 +244,7 @@ emails = re.findall(pattern, text)
 print(emails)  # ['email@example.com', 'email2@example.org']
 ```
 
-Compiling Regular Expressions<br>
+### Compiling Regular Expressions<br>
 ```
 import re
 
