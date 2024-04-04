@@ -14,6 +14,8 @@
 
 3. [Regular Expressions](#Regular-Expressions)
 
+4. [Linked List](#Linked-List)
+
 ## Big O Notation and Time Complexity
 [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 |                                       |                                       |
@@ -271,4 +273,44 @@ if match:
     print("Email found:", match.group())
 else:
     print("No email found.")
+```
+
+## Linked List
+```
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None  # Pointer to the next node in the list
+
+class LinkedList:
+    def __init__(self):
+        self.head = None  # First node in the list
+
+    def append(self, data):
+        """Append a new node with the given data to the end of the list."""
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
+
+    def print_list(self):
+        """Print all the elements of the list."""
+        cur_node = self.head
+        while cur_node:
+            print(cur_node.data, end=" -> ")
+            cur_node = cur_node.next
+        print("None")
+
+# Example usage
+if __name__ == "__main__":
+    llist = LinkedList()
+    llist.append(1)
+    llist.append(2)
+    llist.append(3)
+
+    llist.print_list()  # Output: 1 -> 2 -> 3 -> None
 ```
