@@ -276,6 +276,8 @@ else:
 ```
 
 ## Linked List
+
+**Example 1:**<br>
 ```
 class Node:
     def __init__(self, data):
@@ -314,6 +316,7 @@ if __name__ == "__main__":
     llist.print_list()  # Output: 1 -> 2 -> 3 -> None
 ```
 
+**Example 2:**<br>
 ```
 class node:
 	def __init__(self,data=None):
